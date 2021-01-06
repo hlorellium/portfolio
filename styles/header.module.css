@@ -1,16 +1,15 @@
 .wrapper {
-    width: 100vw;
+    width: 90vw;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 0 auto;
 }
 
 .name {
-    color: var(--link);
 }
 
 .active {
-    color: red;
 }
 
 .links {

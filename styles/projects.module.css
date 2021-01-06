@@ -5,4 +5,23 @@
     max-width: 1170px;
     margin: 0 auto 2rem;
     width: 90vw;
+    padding-top: 2rem;
+}
+
+.divider {
+    width: 10vw;
+    height: 3px;
+    background-color: var(--font);
+    margin: 0;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
 }

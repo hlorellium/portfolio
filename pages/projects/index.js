@@ -6,22 +6,21 @@ import styles from '../../styles/projects.module.css';
 export default function Projects() {
     return (
         <Layout>
-            <div className={styles.container}>
-                <Head>
-                    <title>Projects</title>
-                    {/* <link rel="icon" href="/favicon.ico" /> */}
-                </Head>
+            <Head>
+                <title>Projects</title>
+                {/* <link rel="icon" href="/favicon.ico" /> */}
+            </Head>
 
-                <main className={styles.main}>
-                    <h1 className={styles.title}>Projects</h1>
-                    <div className={styles.grid}>
-                        <ProjectCard
-                            imgSrc="/projects/loan_calculator/capture.png"
-                            name="Loan Calculator"
-                        />
-                    </div>
-                </main>
-            </div>
+            <main className={styles.main}>
+                <h1 className={styles.title}>Projects</h1>
+                <div className={styles.divider}/>
+                <div className={styles.grid}>
+                    <ProjectCard
+                        imgSrc="/projects/loan_calculator/capture.png"
+                        name="Loan Calculator"
+                    />
+                </div>
+            </main>
         </Layout>
     );
 }

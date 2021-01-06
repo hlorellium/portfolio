@@ -6,6 +6,7 @@ body {
         Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
     background-color: var(--bg);
     color: var(--font);
+    font-size: calc(14px + (20 - 14) * ((100vw - 300px) / (1920 - 300)));
 }
 
 a {
@@ -17,14 +18,4 @@ a {
     box-sizing: border-box;
 }
 
-:root {
-    --link: #7d7dff;
-    --bg: #f2cdc4;
-    --projectCard: #ffffff;
-    --font: #111826;
-    --lightFont: #ffffff;
-    --lightShadow: 0 5px 15px rgba(0,0,0,0.1);
-    --darkShadow: 0 5px 15px rgba(0,0,0,0.2);
-    --transition: all 0.25s ease-in-out;
-    --radius: 0.25rem;
-}
+

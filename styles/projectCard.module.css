@@ -1,5 +1,6 @@
 .block {
     max-width: 400px;
+    height: auto;
     display: flex;
     flex-direction: column;
     background-color: var(--projectCard);
@@ -7,6 +8,8 @@
     box-shadow: var(--lightShadow);
     transition: var(--transition);
     border-radius: var(--radius);
+    cursor: pointer;
+    color: var(--projectFont);
 }
 
 .block:hover {
@@ -14,6 +17,8 @@
     transform: scale(1.02);
     transition: var(--transition);
 }
+
+
 
 .img {
     width: 100%;
