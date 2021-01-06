@@ -12,6 +12,14 @@ export const ColorProvider = ({ children }) => {
             font: '#ffffff',
             invertedFont: '#0D0D0D',
         },
+        white: {
+            link: '#0D0D0D',
+            bg: '#ffffff',
+            projectCard: '#ffffff',
+            projectFont: '#404040',
+            font: '#0D0D0D',
+            invertedFont: '#ffffff', 
+        }
     };
 
     const [currentPalette, setCurrentPallete] = useState(colorPalettes.red);

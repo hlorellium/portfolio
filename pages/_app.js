@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import GlobalStyles from '../components/globalStyles';
 import { ColorProvider } from '../context/colorContext';
 import '../styles/globals.css';
 
@@ -13,6 +14,7 @@ function MyApp({ Component, pageProps }) {
                 />
             </Head>
             <ColorProvider>
+                <GlobalStyles />
                 <Component {...pageProps} />
             </ColorProvider>
         </>
