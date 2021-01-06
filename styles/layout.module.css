@@ -1,0 +1,8 @@
+.wrapper {
+    min-height: 100vh;
+}
+
+.container {
+    max-width: max(1400px, 90vw);
+    margin: 0 auto;
+}
