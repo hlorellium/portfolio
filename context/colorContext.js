@@ -1,4 +1,5 @@
 import { createContext, useState } from 'react';
+import Cookies from 'js-cookie';
 
 export const ColorContext = createContext();
 
@@ -18,11 +19,13 @@ export const ColorProvider = ({ children }) => {
             projectCard: '#ffffff',
             projectFont: '#404040',
             font: '#0D0D0D',
-            invertedFont: '#ffffff', 
-        }
+            invertedFont: '#ffffff',
+        },
     };
 
-    const [currentPalette, setCurrentPallete] = useState(colorPalettes.red);
+    const [currentPalette, setCurrentPallete] = useState(
+        colorPalettes[Cookies.get('palette') || 'red']
+    );
     return (
         <ColorContext.Provider
             value={{
