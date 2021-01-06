@@ -1,0 +1,30 @@
+.block {
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--projectCard);
+    align-items: center;
+    box-shadow: var(--lightShadow);
+    transition: var(--transition);
+    border-radius: var(--radius);
+}
+
+.block:hover {
+    box-shadow: var(--darkShadow);
+    transform: scale(1.02);
+    transition: var(--transition);
+}
+
+.img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+    border-top-left-radius: var(--radius);
+    border-top-right-radius: var(--radius);
+}
+
+.name {
+    font-weight: 500;
+    text-align: center;
+}
