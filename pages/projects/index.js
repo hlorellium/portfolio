@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Layout from '../../components/layout';
+import ProjectCard from '../../components/projectCard';
 import styles from '../../styles/projects.module.css';
 
 export default function Projects() {
@@ -13,6 +14,12 @@ export default function Projects() {
 
                 <main className={styles.main}>
                     <h1 className={styles.title}>Projects</h1>
+                    <div className={styles.grid}>
+                        <ProjectCard
+                            imgSrc="/projects/loan_calculator/capture.png"
+                            name="Loan Calculator"
+                        />
+                    </div>
                 </main>
             </div>
         </Layout>
