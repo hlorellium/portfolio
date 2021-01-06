@@ -13,7 +13,7 @@ export default function Home() {
             <main className={styles.main}>
                 <h1 className={styles.title}>Pjotr Anohhin</h1>
                 <Link href="/projects">
-                    <a>Watch my projects</a>
+                    <a className={styles.link}>Watch my projects</a>
                 </Link>
             </main>
         </div>

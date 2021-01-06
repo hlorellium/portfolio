@@ -6,7 +6,7 @@
 }
 
 .name {
-    color: rgb(94, 94, 250);
+    color: var(--link);
 }
 
 .active {
