@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import { ColorContext } from '../context/colorContext';
-import Cookies from 'js-cookie'
+import Cookies from 'js-cookie';
 
 const ColorCircle = ({ color }) => {
     const { colorPalettes, currentPalette, setCurrentPallete } = useContext(
@@ -10,7 +10,7 @@ const ColorCircle = ({ color }) => {
     return (
         <>
             <style jsx>{`
-                .circ {
+                div {
                     background-color: ${colorPalettes[color].bg};
                     width: 1.1rem;
                     height: 1.1rem;
@@ -23,7 +23,6 @@ const ColorCircle = ({ color }) => {
                 }
             `}</style>
             <div
-                className="circ"
                 onClick={() => {
                     setCurrentPallete(colorPalettes[color]);
                     Cookies.set('palette', color);
