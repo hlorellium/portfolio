@@ -6,7 +6,7 @@ import { getSortedProjectsData } from '../../utils/projects';
 
 export default function Projects({ allProjectsData }) {
     return (
-        <Layout>
+        <>
             <Head>
                 <title>Projects</title>
                 {/* <link rel="icon" href="/favicon.ico" /> */}
@@ -26,7 +26,7 @@ export default function Projects({ allProjectsData }) {
                     ))}
                 </div>
             </main>
-        </Layout>
+        </>
     );
 }
 

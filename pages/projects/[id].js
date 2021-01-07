@@ -5,7 +5,7 @@ import { getAllProjectsIds, getProjectData } from '../../utils/projects';
 
 const Project = ({ projectData }) => {
     return (
-        <Layout>
+        <>
             <Head>
                 <title>{projectData.title}</title>
             </Head>
@@ -17,7 +17,7 @@ const Project = ({ projectData }) => {
                     }}
                 />
             </article>
-        </Layout>
+        </>
     );
 };
 

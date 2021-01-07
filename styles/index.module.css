@@ -1,20 +1,40 @@
 .container {
-    min-height: 100vh;
+    /* min-height: 100vh; */
     padding: 0 0.5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex-grow: 1;
 }
 
 .main {
-    padding: 5rem 0;
+    /* padding: 5rem 0; */
     flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: left;
+    width: 80vw;
 }
+
+.divider {
+    width: 10vw;
+    height: 3px;
+    background-color: var(--font);
+    margin: 1rem 0;
+}
+
+.description {
+    font-size: 1.2rem;
+}
+
+.cta {
+    align-items: flex-end;
+    display: flex;
+    justify-content: flex-end;
+}
+
 
 .title {
     margin: 0;
@@ -23,8 +43,9 @@
 }
 
 .link {
-    font-size: 1.2rem;
-    font-weight: 500;
+    font-size: 3rem;
+    font-weight: 400;
+    text-align: right;
 }
 
 .link:hover {

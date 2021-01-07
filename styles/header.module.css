@@ -1,11 +1,14 @@
 .wrapper {
-    width: 90vw;
+    width: 80vw;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    padding: 2rem 0 0 0;
     margin: 0 auto;
+    /* position: absolute;
+    left: 0;
+    right: 0; */
 }
-
 
 /* .container {
     max-width: max(1400px, 90vw);
@@ -19,8 +22,17 @@
 }
 
 .active {
+    color: var(--invertedFont);
 }
 
 .links {
     list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    justify-self: start;
+}
+
+.links li {
+    margin: 0 1rem;
 }

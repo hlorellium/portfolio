@@ -12,11 +12,16 @@ export default function Home() {
             </Head>
 
             <main className={styles.main}>
-                <ThemeSwitcher />
-                <h1 className={styles.title}>Pjotr Anohhin</h1>
-                <Link href="/projects">
-                    <a className={styles.link}>Watch my projects</a>
-                </Link>
+                <div className={styles.me}>
+                    <h1 className={styles.title}>Pjotr Anohhin</h1>
+                    <div className={styles.divider} />
+                    <p className={styles.description}>frontend developer</p>
+                </div>
+                <div className={styles.cta}>
+                    <Link href="/projects">
+                        <a className={styles.link}>watch <br />projects</a>
+                    </Link>
+                </div>
             </main>
         </div>
     );
