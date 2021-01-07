@@ -18,6 +18,7 @@ export default function Projects() {
                     <ProjectCard
                         imgSrc="/projects/loan_calculator/capture.png"
                         name="Loan Calculator"
+                        href="loan-calculator"
                     />
                 </div>
             </main>
