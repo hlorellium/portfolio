@@ -14,6 +14,7 @@ const ColorCircle = ({ color }) => {
                     display: ${colorPalettes[color].bg === currentPalette.bg
                         ? 'none'
                         : 'block'};
+                        margin: 0 0.3rem;
                 }
                 div {
                     background-color: ${colorPalettes[color].bg};
@@ -22,6 +23,9 @@ const ColorCircle = ({ color }) => {
                     border-radius: 100%;
                     margin: 0;
                     cursor: pointer;
+                    display: ${colorPalettes[color].bg === currentPalette.bg
+                        ? 'none'
+                        : 'block'};
                 }
             `}</style>
             <li>

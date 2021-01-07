@@ -1,28 +1,10 @@
 import { createContext, useState } from 'react';
 import Cookies from 'js-cookie';
+import { colorPalettes } from '../utils/colorPalettes.js';
 
 export const ColorContext = createContext();
 
 export const ColorProvider = ({ children }) => {
-    const colorPalettes = {
-        red: {
-            link: '#0D0D0D',
-            bg: '#BF382C',
-            projectCard: '#ffffff',
-            projectFont: '#404040',
-            font: '#ffffff',
-            invertedFont: '#0D0D0D',
-        },
-        white: {
-            link: '#0D0D0D',
-            bg: '#ffffff',
-            projectCard: '#ffffff',
-            projectFont: '#404040',
-            font: '#0D0D0D',
-            invertedFont: '#ffffff',
-        },
-    };
-
     const [currentPalette, setCurrentPallete] = useState(
         colorPalettes[Cookies.get('palette') || 'red']
     );

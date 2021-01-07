@@ -6,7 +6,8 @@ const ThemeSwitcher = () => {
         <>
             <style jsx>{`
                 ul {
-                    margin: 0;
+                    margin: 0 2rem;
+                    padding: 0;
                     display: flex;
                     justify-content: center;
                     align-items: center;
@@ -16,6 +17,7 @@ const ThemeSwitcher = () => {
             <ul>
                 <ColorCircle color="red" />
                 <ColorCircle color="white" />
+                <ColorCircle color="blue" />
             </ul>
         </>
     );
