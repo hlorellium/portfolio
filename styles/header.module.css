@@ -6,12 +6,7 @@
     margin: 0 auto;
 }
 
-.colors {
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
 /* .container {
     max-width: max(1400px, 90vw);
     display: flex;

@@ -10,24 +10,28 @@ const ColorCircle = ({ color }) => {
     return (
         <>
             <style jsx>{`
+                li {
+                    display: ${colorPalettes[color].bg === currentPalette.bg
+                        ? 'none'
+                        : 'block'};
+                }
                 div {
                     background-color: ${colorPalettes[color].bg};
                     width: 1.1rem;
                     height: 1.1rem;
                     border-radius: 100%;
                     margin: 0;
-                    display: ${colorPalettes[color].bg === currentPalette.bg
-                        ? 'none'
-                        : 'block'};
                     cursor: pointer;
                 }
             `}</style>
-            <div
-                onClick={() => {
-                    setCurrentPallete(colorPalettes[color]);
-                    Cookies.set('palette', color);
-                }}
-            ></div>
+            <li>
+                <div
+                    onClick={() => {
+                        setCurrentPallete(colorPalettes[color]);
+                        Cookies.set('palette', color);
+                    }}
+                ></div>
+            </li>
         </>
     );
 };
