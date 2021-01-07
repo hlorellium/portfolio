@@ -1,5 +1,5 @@
 ---
-title: 'loan calculator'
+title: 'Loan calculator'
 ---
 
 # Some text
