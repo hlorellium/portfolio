@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import React from 'react';
-import Layout from '../../components/layout';
+import { css } from '@emotion/react';
+
 import { getAllProjectsIds, getProjectData } from '../../utils/projects';
 
 const Project = ({ projectData }) => {
@@ -9,8 +10,25 @@ const Project = ({ projectData }) => {
             <Head>
                 <title>{projectData.title}</title>
             </Head>
-            <article>
-                <h1>{projectData.title}</h1>
+
+            <article
+                css={css`
+                    max-width: 80vw;
+
+                    .pageTitle {
+                        text-align: center;
+                        font-size: 2rem;
+                    }
+
+                    img {
+                        max-width: 80%;
+                    }
+                    a {
+                        text-decoration: underline;
+                    }
+                `}
+            >
+                <h1 className="pageTitle">{projectData.title}</h1>
                 <div
                     dangerouslySetInnerHTML={{
                         __html: projectData.contentHtml,

@@ -1,25 +1,23 @@
 import React from 'react';
 import ColorCircle from './colorCircle';
+import { css } from '@emotion/react'
 
 const ThemeSwitcher = () => {
     return (
-        <>
-            <style jsx>{`
-                ul {
-                    margin: 0 2rem;
-                    padding: 0;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    list-styles: none;
-                }
-            `}</style>
-            <ul>
-                <ColorCircle color="red" />
-                <ColorCircle color="white" />
-                <ColorCircle color="blue" />
-            </ul>
-        </>
+        <ul
+            css={css`
+                margin: 0 2rem;
+                padding: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                list-styles: none;
+            `}
+        >
+            <ColorCircle color="red" />
+            <ColorCircle color="white" />
+            <ColorCircle color="blue" />
+        </ul>
     );
 };
 

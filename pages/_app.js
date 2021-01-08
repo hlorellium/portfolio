@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import GlobalStyles from '../components/globalStyles';
+import GlobalStyles from '../styles/globalStyles';
 import Layout from '../components/layout';
 import { ColorProvider } from '../context/colorContext';
 import '../styles/globals.css';

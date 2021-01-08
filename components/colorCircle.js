@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import { ColorContext } from '../context/colorContext';
 import Cookies from 'js-cookie';
+import { css } from '@emotion/react'
 
 const ColorCircle = ({ color }) => {
     const { colorPalettes, currentPalette, setCurrentPallete } = useContext(
@@ -9,26 +10,26 @@ const ColorCircle = ({ color }) => {
 
     return (
         <>
-            <style jsx>{`
-                li {
+            <li
+                css={css`
                     display: ${colorPalettes[color].bg === currentPalette.bg
                         ? 'none'
                         : 'block'};
-                        margin: 0 0.3rem;
-                }
-                div {
-                    background-color: ${colorPalettes[color].bg};
-                    width: 1.1rem;
-                    height: 1.1rem;
-                    border-radius: 100%;
-                    margin: 0;
-                    cursor: pointer;
-                    display: ${colorPalettes[color].bg === currentPalette.bg
-                        ? 'none'
-                        : 'block'};
-                }
-            `}</style>
-            <li>
+                    margin: 0 0.3rem;
+
+                    div {
+                        background-color: ${colorPalettes[color].bg};
+                        width: 1.1rem;
+                        height: 1.1rem;
+                        border-radius: 100%;
+                        margin: 0;
+                        cursor: pointer;
+                        display: ${colorPalettes[color].bg === currentPalette.bg
+                            ? 'none'
+                            : 'block'};
+                    }
+                `}
+            >
                 <div
                     onClick={() => {
                         setCurrentPallete(colorPalettes[color]);
