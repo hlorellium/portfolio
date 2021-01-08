@@ -16,8 +16,8 @@ const GlobalStyles = () => {
                     --projectFont: ${currentPalette.projectFont};
                     --font: ${currentPalette.font};
                     --invertedFont: ${currentPalette.invertedFont};
-                    --lightShadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-                    --darkShadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+                    --lightShadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+                    --darkShadow: 0 5px 15px rgba(0, 0, 0, 0.3);
                     --transition: all 0.25s ease-in-out;
                     --radius: 0.25rem;
                 }

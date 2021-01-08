@@ -1,8 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
-import remark from 'remark';
-import html from 'remark-html';
+
 
 const projectsDirectory = path.join(process.cwd(), 'projects');
 
@@ -55,15 +54,12 @@ export const getProjectData = async (id) => {
     // Use gray-matter to parse the post metadata section
     const matterResult = matter(fileContents);
 
-    // Use remark to convert markdown into html string
-    const processedContent = await remark()
-        .use(html)
-        .process(matterResult.content);
-    const contentHtml = processedContent.toString();
+    const content = matterResult.content;
     // Combine the data with the id
     return {
         id,
-        contentHtml,
+        // contentHtml,
+        content,
         ...(matterResult.data),
     };
 };

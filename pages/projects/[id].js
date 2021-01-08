@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import React from 'react';
+import ReactMarkdown from 'react-markdown';
 import { css } from '@emotion/react';
 
 import { getAllProjectsIds, getProjectData } from '../../utils/projects';
@@ -29,11 +30,8 @@ const Project = ({ projectData }) => {
                 `}
             >
                 <h1 className="pageTitle">{projectData.title}</h1>
-                <div
-                    dangerouslySetInnerHTML={{
-                        __html: projectData.contentHtml,
-                    }}
-                />
+
+                <ReactMarkdown>{projectData.content}</ReactMarkdown>
             </article>
         </>
     );
