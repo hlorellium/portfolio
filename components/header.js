@@ -12,12 +12,24 @@ const Header = () => {
             <Link href="/">
                 <a
                     className={styles.name}
-                    css={{
-                        visibility:
-                            router.pathname === '/' ? 'hidden' : 'visible',
-                    }}
+                    // css={{
+                    //     visibility:
+                    //         router.pathname === '/' ? 'hidden' : 'visible',
+                    // }}
+                    css={css`
+                        visibility: ${router.pathname === '/'
+                            ? 'hidden'
+                            : 'visible'};
+                        /* svg {
+                            width: 100px;
+                            height: 100px;
+                            transform: scaleX(-1);
+                            fill: var(--bg);
+                            filter: invert(1);
+                        } */
+                    `}
                 >
-                    Pjotr Anohhin
+                    Pjotr Anohhin   
                 </a>
             </Link>
 

@@ -14,15 +14,19 @@ const Project = ({ projectData }) => {
 
             <article
                 css={css`
-                    max-width: 80vw;
+                    width: 80vw;
 
                     .pageTitle {
                         text-align: center;
                         font-size: 2rem;
                     }
 
+                    p {
+                        /* display: flex; */
+                    }
                     img {
-                        max-width: 80%;
+                        margin: auto;
+                        width: 50%;
                     }
                     a {
                         text-decoration: underline;
