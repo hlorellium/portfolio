@@ -24,7 +24,7 @@ const Header = () => {
             <ul className={styles.links}>
                 <NavLink href="/">about</NavLink>
                 <NavLink href="/projects">projects</NavLink>
-                <NavLink href="/">contact</NavLink>
+                <NavLink href="/contact">contact</NavLink>
             </ul>
         </div>
     );
