@@ -35,7 +35,53 @@ const Project = ({ projectData }) => {
             >
                 <h1 className="pageTitle">{projectData.title}</h1>
 
+                <div css={css`
+                display: flex;
+                justify-content: space-evenly;
+                `}>
+                    {projectData.github && (
+                        <p>
+                            Link to Github:{' '}
+                            <a
+                                rel="noopener noreferrer"
+                                target="_blank"
+                                href={projectData.github}
+                            >
+                                {projectData.github}
+                            </a>
+                        </p>
+                    )}
+                    {projectData.live && (
+                        <p>
+                            Live at {' '}
+                            <a
+                                rel="noopener noreferrer"
+                                target="_blank"
+                                href={projectData.live}
+                            >
+                                {projectData.live}
+                            </a>
+                        </p>
+                    )}
+                </div>
                 <ReactMarkdown>{projectData.content}</ReactMarkdown>
+                <div
+                    css={css`
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        img {
+                            width: 75%;
+                            margin: 0 auto;
+                        }
+                    `}
+                >
+                    <img
+                        src={`/projects/${projectData.id}/capture.png`}
+                        alt="project preview image"
+                    />
+                </div>
             </article>
         </>
     );

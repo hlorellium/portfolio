@@ -1,10 +1,9 @@
 ---
 title: 'Expense tracker'
+github: 'https://github.com/hlorellium/expense-tracker'
 ---
 
-Link to Github: <https://github.com/hlorellium/expense-tracker>
-# Some text
 
-and other
+## Basic expense tracker using MERN stack. 
 
-![Light theme](/projects/expense-tracker/capture.png)
+
