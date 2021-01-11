@@ -21,27 +21,29 @@ const Project = ({ projectData }) => {
                         font-size: 2rem;
                     }
 
-                    p {
-                        /* display: flex; */
+                    p span {
                     }
                     img {
                         margin: auto;
                         width: 50%;
                     }
-                    a {
+                 
+                    a:hover {
                         text-decoration: underline;
                     }
                 `}
             >
                 <h1 className="pageTitle">{projectData.title}</h1>
 
-                <div css={css`
-                display: flex;
-                justify-content: space-evenly;
-                `}>
+                <div
+                    css={css`
+                        display: flex;
+                        justify-content: space-evenly;
+                    `}
+                >
                     {projectData.github && (
                         <p>
-                            Link to Github:{' '}
+                            <span>Link to Github: </span>
                             <a
                                 rel="noopener noreferrer"
                                 target="_blank"
@@ -53,7 +55,7 @@ const Project = ({ projectData }) => {
                     )}
                     {projectData.live && (
                         <p>
-                            Live at {' '}
+                            <span>Live: </span>
                             <a
                                 rel="noopener noreferrer"
                                 target="_blank"

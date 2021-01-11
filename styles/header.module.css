@@ -38,3 +38,9 @@
 .links li {
     margin: 0 1rem;
 }
+.links li a {
+}
+
+.links li a:hover {
+    color: var(--invertedFont);
+}

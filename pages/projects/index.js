@@ -1,5 +1,4 @@
 import Head from 'next/head';
-import Layout from '../../components/layout';
 import ProjectCard from '../../components/projectCard';
 import styles from '../../styles/projects.module.css';
 import { getSortedProjectsData } from '../../utils/projects';
