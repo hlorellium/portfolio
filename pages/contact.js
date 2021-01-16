@@ -45,6 +45,15 @@ const Contact = () => {
                     https://www.linkedin.com/in/pjotr-anohhin-86475b1aa/
                 </a>
             </p>
+            <p>
+                <span>Github:</span>{' '}
+                <a
+                    target="_blank"
+                    href="https://github.com/hlorellium"
+                >
+                    https://github.com/hlorellium
+                </a>
+            </p>
         </div>
     );
 };
