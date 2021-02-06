@@ -32,6 +32,9 @@ const Contact = () => {
                 svg path {
                     fill: var(--font);
                 }
+                svg rect {
+                    fill: var(--font);
+                }
                 p {
                     display: flex;
                     align-items: center;
@@ -45,13 +48,6 @@ const Contact = () => {
 
                 <a href="mailto: tdoregani@hotmail.com">
                     tdoregani@hotmail.com
-                </a>
-            </p>
-            <p>
-                <TelegramIcon />
-
-                <a target="_blank" href="https://t.me/hlorellium">
-                    @hlorellium
                 </a>
             </p>
             <p>
@@ -69,6 +65,13 @@ const Contact = () => {
 
                 <a target="_blank" href="https://github.com/hlorellium">
                     https://github.com/hlorellium
+                </a>
+            </p>
+            <p>
+                <TelegramIcon />
+
+                <a target="_blank" href="https://t.me/hlorellium">
+                    @hlorellium
                 </a>
             </p>
         </div>
