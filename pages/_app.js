@@ -14,6 +14,7 @@ function MyApp({ Component, pageProps }) {
                     content="initial-scale=1.0, width=device-width"
                 />
                 <link rel="shortcut icon" href="/favicon.ico" />
+                <title>Pjotr Anohhin</title>
             </Head>
             <ColorProvider>
                 <GlobalStyles />
