@@ -4,6 +4,7 @@ import NavLink from './navLink';
 import styles from '../styles/header.module.css';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
+import ThemeSwitcher from './themeSwitcher';
 
 const Header = () => {
     const router = useRouter();
@@ -29,7 +30,7 @@ const Header = () => {
                         } */
                     `}
                 >
-                    Pjotr Anohhin   
+                    Pjotr Anohhin
                 </a>
             </Link>
 
@@ -37,6 +38,7 @@ const Header = () => {
                 <NavLink href="/">about</NavLink>
                 <NavLink href="/projects">projects</NavLink>
                 <NavLink href="/contact">contact</NavLink>
+                <ThemeSwitcher />
             </ul>
         </div>
     );

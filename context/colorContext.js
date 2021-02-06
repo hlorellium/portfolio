@@ -6,7 +6,7 @@ export const ColorContext = createContext();
 
 export const ColorProvider = ({ children }) => {
     const [currentPalette, setCurrentPallete] = useState(
-        colorPalettes[Cookies.get('palette') || 'red']
+        colorPalettes[Cookies.get('palette') || 'white']
     );
     return (
         <ColorContext.Provider
