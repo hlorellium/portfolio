@@ -39,7 +39,7 @@ const ThemeSwitcher = () => {
             <ColorCircle color="black" />
             <ColorCircle color="white" />
             <ColorCircle color="red" />
-            <ColorCircle color="blue" />
+            {/* <ColorCircle color="blue" /> */}
         </ul>
     );
 };
