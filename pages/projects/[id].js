@@ -2,8 +2,11 @@ import Head from 'next/head';
 import React from 'react';
 import ReactMarkdown from 'react-markdown';
 import { css } from '@emotion/react';
+import { ReactComponent as GithubIcon } from '../../public/icons/github.svg';
+import { ReactComponent as UrlIcon } from '../../public/icons/url.svg';
 
 import { getAllProjectsIds, getProjectData } from '../../utils/projects';
+import ArticleLink from '../../components/articleLink';
 
 const Project = ({ projectData }) => {
     return (
@@ -17,8 +20,7 @@ const Project = ({ projectData }) => {
                     width: 80vw;
 
                     .pageTitle {
-                        text-align: center;
-                        font-size: 2rem;
+                        font-size: 5rem;
                     }
 
                     p span {
@@ -27,46 +29,43 @@ const Project = ({ projectData }) => {
                         margin: auto;
                         width: 50%;
                     }
-                 
+
                     a:hover {
                         text-decoration: underline;
                     }
                 `}
             >
-                <h1 className="pageTitle">{projectData.title}</h1>
-
                 <div
                     css={css`
                         display: flex;
-                        justify-content: space-evenly;
+                        justify-content: space-between;
+                        align-items: flex-end;
                     `}
                 >
-                    {projectData.github && (
-                        <p>
-                            <span>Link to Github: </span>
-                            <a
-                                rel="noopener noreferrer"
-                                target="_blank"
-                                href={projectData.github}
-                            >
-                                {projectData.github}
-                            </a>
-                        </p>
-                    )}
-                    {projectData.live && (
-                        <p>
-                            <span>Live: </span>
-                            <a
-                                rel="noopener noreferrer"
-                                target="_blank"
-                                href={projectData.live}
-                            >
-                                {projectData.live}
-                            </a>
-                        </p>
-                    )}
+                    <h1 className="pageTitle">{projectData.title}</h1>
+
+                    <div
+                        css={css`
+                            display: flex;
+                            flex-direction: column;
+                            margin-bottom: 3rem;
+                        `}
+                    >
+                        {projectData.github && (
+                            <ArticleLink
+                                icon={<GithubIcon />}
+                                url={projectData.github}
+                            />
+                        )}
+
+                        {projectData.live && (
+                            <ArticleLink
+                                icon={<UrlIcon />}
+                                url={projectData.live}
+                            />
+                        )}
+                    </div>
                 </div>
-                <ReactMarkdown>{projectData.content}</ReactMarkdown>
                 <div
                     css={css`
                         width: 100%;
@@ -74,7 +73,7 @@ const Project = ({ projectData }) => {
                         flex-direction: column;
                         align-items: center;
                         img {
-                            width: 75%;
+                            width: 100%;
                             margin: 0 auto;
                         }
                     `}
@@ -84,6 +83,14 @@ const Project = ({ projectData }) => {
                         alt="project preview image"
                     />
                 </div>
+                <ReactMarkdown
+                    css={css`
+                        width: 40%;
+                        margin: 0 auto;
+                    `}
+                >
+                    {projectData.content}
+                </ReactMarkdown>
             </article>
         </>
     );
