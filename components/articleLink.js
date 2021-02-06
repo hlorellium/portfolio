@@ -11,7 +11,7 @@ const ArticleLink = ({ icon, url }) => {
                     margin-right: 1rem;
                 }
                 svg path {
-                    fill: white;
+                    fill: var(--font);
                 }
                 margin: 0.5rem 1rem;
                 display: flex;
