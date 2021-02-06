@@ -33,6 +33,11 @@ const Project = ({ projectData }) => {
                     a:hover {
                         text-decoration: underline;
                     }
+                    @media (max-width: 900px) {
+                        .pageTitle {
+                            font-size: 3rem;
+                        }
+                    }
                 `}
             >
                 <div
@@ -40,6 +45,10 @@ const Project = ({ projectData }) => {
                         display: flex;
                         justify-content: space-between;
                         align-items: flex-end;
+                        @media (max-width: 900px) {
+                            flex-direction: column;
+                            align-items: start;
+                        }
                     `}
                 >
                     <h1 className="pageTitle">{projectData.title}</h1>
