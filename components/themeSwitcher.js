@@ -26,6 +26,14 @@ const ThemeSwitcher = () => {
                     visibility: visible;
                     opacity: 1;
                 }
+                @media (max-width: 900px) {
+                    flex-direction: column;
+                    li {
+                        visibility: visible;
+                        opacity: 1;
+                        margin: 0.2rem 0;
+                    }
+                }
             `}
         >
             <ColorCircle color="black" />
