@@ -8,12 +8,12 @@ export const colorPalettes = {
         invertedFont: '#0D0D0D',
     },
     white: {
-        link: '#666666',
+        link: '#686CF3',
         bg: '#ffffff',
         projectCard: '#ffffff',
         projectFont: '#404040',
         font: '#212121',
-        invertedFont: '#666666',
+        invertedFont: '#F37D7F',
     },
     blue: {
         link: '#F2163E',
@@ -24,11 +24,11 @@ export const colorPalettes = {
         invertedFont: '#ffffff',
     },
     black: {
-        link: '#666666',
+        link: '#686CF3',
         bg: '#212121',
         projectCard: '#ffffff',
         projectFont: '#404040',
         font: '#ffffff',
-        invertedFont: '#666666',
+        invertedFont: '#F37D7F',
     }
 };

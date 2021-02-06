@@ -3,26 +3,40 @@ import { css } from '@emotion/react';
 
 const ArticleLink = ({ icon, url }) => {
     return (
-        <div
+        <a
+            rel="noopener noreferrer"
+            target="_blank"
+            href={url}
             css={css`
+                display: flex;
+                align-items: center;
+                margin: 1rem 0;
+                :hover {
+                    text-decoration: underline;
+                    color: var(--link);
+                }
                 svg {
-                    width: 2rem;
-                    height: 2rem;
+                    width: 1.8rem;
+                    height: 1.8rem;
                     margin-right: 1rem;
                 }
                 svg path {
                     fill: var(--font);
                 }
-                margin: 0.5rem 1rem;
-                display: flex;
-                align-items: center;
+                svg rect {
+                    fill: var(--font);
+                }
+                :hover svg path {
+                    fill: var(--link);
+                }
+                :hover svg rect {
+                    fill: var(--link);
+                }
             `}
         >
             {icon}
-            <a rel="noopener noreferrer" target="_blank" href={url}>
-                {url}
-            </a>
-        </div>
+            {url}
+        </a>
     );
 };
 

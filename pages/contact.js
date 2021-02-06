@@ -26,9 +26,14 @@ const Contact = () => {
                         opacity: 0.9;
                     }
                     a {
+                        display: flex;
+                        align-items: center;
+                        margin: 1rem 0;
                     }
                     a:hover {
                         text-decoration: underline;
+                        color: var(--link);
+
                     }
                     svg {
                         width: 1.5rem;
@@ -41,45 +46,39 @@ const Contact = () => {
                     svg rect {
                         fill: var(--font);
                     }
-                    p {
-                        display: flex;
-                        align-items: center;
+                    a:hover svg path {
+                        fill: var(--link);
+                    }
+                    a:hover svg rect {
+                        fill: var(--link);
                     }
                 `}
             >
                 <h2>Contact me</h2>
                 <div className="divider" />
-                <p>
+
+                <a href="mailto: tdoregani@hotmail.com">
                     <EmailIcon />
+                    tdoregani@hotmail.com
+                </a>
 
-                    <a href="mailto: tdoregani@hotmail.com">
-                        tdoregani@hotmail.com
-                    </a>
-                </p>
-                <p>
+                <a
+                    target="_blank"
+                    href="https://www.linkedin.com/in/pjotr-anohhin-86475b1aa/"
+                >
                     <LinkedinIcon />
+                    https://www.linkedin.com/in/pjotr-anohhin-86475b1aa/
+                </a>
 
-                    <a
-                        target="_blank"
-                        href="https://www.linkedin.com/in/pjotr-anohhin-86475b1aa/"
-                    >
-                        https://www.linkedin.com/in/pjotr-anohhin-86475b1aa/
-                    </a>
-                </p>
-                <p>
+                <a target="_blank" href="https://github.com/hlorellium">
                     <GithubIcon />
+                    https://github.com/hlorellium
+                </a>
 
-                    <a target="_blank" href="https://github.com/hlorellium">
-                        https://github.com/hlorellium
-                    </a>
-                </p>
-                <p>
+                <a target="_blank" href="https://t.me/hlorellium">
                     <TelegramIcon />
-
-                    <a target="_blank" href="https://t.me/hlorellium">
-                        @hlorellium
-                    </a>
-                </p>
+                    @hlorellium
+                </a>
             </div>
         </>
     );

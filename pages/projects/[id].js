@@ -23,16 +23,11 @@ const Project = ({ projectData }) => {
                         font-size: 5rem;
                     }
 
-                    p span {
-                    }
                     img {
                         margin: auto;
-                        width: 50%;
+                        width: 100%;
                     }
 
-                    a:hover {
-                        text-decoration: underline;
-                    }
                     @media (max-width: 900px) {
                         .pageTitle {
                             font-size: 3rem;
