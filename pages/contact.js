@@ -30,7 +30,7 @@ const Contact = () => {
                     margin-right: 1rem;
                 }
                 svg path {
-                    fill: white;
+                    fill: var(--font);
                 }
                 p {
                     display: flex;
