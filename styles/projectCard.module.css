@@ -14,7 +14,7 @@
 
 .block:hover {
     box-shadow: var(--darkShadow);
-    transform: scale(1.02);
+    transform: translateY(-10px);
     transition: var(--transition);
 }
 
