@@ -70,6 +70,14 @@ const Project = ({ projectData }) => {
                         )}
                     </div>
                 </div>
+                <ReactMarkdown
+                    // css={css`
+                    //     width: 40%;
+                    //     margin: 0 auto;
+                    // `}
+                >
+                    {projectData.content}
+                </ReactMarkdown>
                 <div
                     css={css`
                         width: 100%;
@@ -78,8 +86,9 @@ const Project = ({ projectData }) => {
                         align-items: center;
                         img {
                             width: 100%;
-                            margin: 0 auto;
+                            margin: 1em auto;
                         }
+                        margin-bottom: 3em;
                     `}
                 >
                     <img
@@ -87,14 +96,6 @@ const Project = ({ projectData }) => {
                         alt="project preview image"
                     />
                 </div>
-                <ReactMarkdown
-                    css={css`
-                        width: 40%;
-                        margin: 0 auto;
-                    `}
-                >
-                    {projectData.content}
-                </ReactMarkdown>
             </article>
         </>
     );
